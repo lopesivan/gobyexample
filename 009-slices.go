@@ -22,6 +22,10 @@ func main() {
   copy(c, s)
   fmt.Println("cpy:", c)
 
+  poped := "x"
+  poped, c = c[len(c)-1], c[:len(c)-1]
+  fmt.Println("pop c:", poped, c)
+
   l := s[2:5]
   fmt.Println("sl1:", l)
 
